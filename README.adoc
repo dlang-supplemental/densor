@@ -1,0 +1,24 @@
+= DGML: D-lang Generic Tensor Library
+
+== Overview
+DGML is a pure D port of the concepts found in GGML and Candle (Rust). It provides a tensor library and inference engine capable of running quantized GGUF models on CPU (and potentially GPU via Compute Shaders later).
+
+== Goals
+1.  **Pure D**: No C bindings. Complete reimplementation of tensor operations.
+2.  **GGUF Support**: Native parser for the GGUF file format.
+3.  **Performance**: Use `mir-algorithm` and SIMD intrinsics for fast matrix multiplication.
+
+== Status
+- [ ] Tensor structure definition.
+- [ ] GGUF Loader.
+- [ ] Matrix Multiplication (Dot Product) implementation.
+- [ ] Activation functions (GeLU, SiLU).
+- [ ] CLIP Model architecture implementation.
+
+== Architecture
+- **Tensor**: N-dimensional array wrapper around `Mir` slices.
+- **Graph**: Simple define-by-run or static graph execution.
+- **Backend**: CPU (SIMD) initially.
+
+== Usage
+`dub add dgml`

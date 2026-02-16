@@ -1,0 +1,14 @@
+.dub/
+docs/_site/
+.idea/
+.vscode/
+bin/
+test/
+*.obj
+*.exe
+*.dll
+*.pdb
+*.json
+!dub.json
+*.jsonc
+!dprint.jsonc

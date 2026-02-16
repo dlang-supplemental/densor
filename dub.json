@@ -1,0 +1,14 @@
+{
+	"name": "dgml",
+	"authors": [
+		"Antigravity"
+	],
+	"description": "Pure D implementation of GGML tensor library for machine learning inference.",
+	"copyright": "Copyright © 2026, Antigravity",
+	"license": "MIT",
+	"dependencies": {
+		"mir-algorithm": "~>3.20.4",
+		"mir-random": "~>2.2.14"
+	},
+	"targetType": "library"
+}
