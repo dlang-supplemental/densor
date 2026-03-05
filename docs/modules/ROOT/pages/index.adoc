@@ -1,3 +1,35 @@
-= DGTL
+= Densor
+:navtitle: Introduction
 
-Welcome to DGTL documentation.
+Densor is a pure D port of the concepts found in GGML and Candle (Rust). It provides a tensor library and inference engine capable of running quantized GGUF models on CPU (and potentially GPU via Compute Shaders later).
+
+== Goals
+
+* **Pure D**: No C bindings. Complete reimplementation of tensor operations.
+* **GGUF Support**: Native parser for the GGUF file format.
+* **Performance**: Use `mir-algorithm` and SIMD intrinsics for fast matrix multiplication.
+
+== Status
+
+* [ ] Tensor structure definition
+* [ ] GGUF Loader
+* [ ] Matrix Multiplication (Dot Product) implementation
+* [ ] Activation functions (GeLU, SiLU)
+* [ ] CLIP Model architecture implementation
+
+== Architecture
+
+* **Tensor**: N-dimensional array wrapper around `mir` slices.
+* **Graph**: Simple define-by-run or static graph execution.
+* **Backend**: CPU (SIMD) initially.
+
+== Usage
+
+[source,bash]
+----
+dub add densor
+----
+
+== Integration
+
+This library serves as the **Inference Engine** for vibe-search-core. Priority is enabling CLIP (Vision Transformer) execution.
