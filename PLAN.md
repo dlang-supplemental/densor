@@ -2,7 +2,7 @@
 
 ## Phase 0: Integration Context
 
-- This library serves as the **Inference Engine** for `image-indexer-core`.
+- This library serves as the **Inference Engine** for `vibe-search-core`.
 - Priority is enabling CLIP (Vision Transformer) execution.
 
 ## Phase 1: Core Tensor Ops
