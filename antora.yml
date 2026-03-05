@@ -1,6 +1,6 @@
-name: dgml
-title: DGML
+name: densor
+title: Densor
 version: master
 start_page: ROOT:index.adoc
 nav:
-- modules/ROOT/nav.adoc
+  - modules/ROOT/nav.adoc

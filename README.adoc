@@ -1,7 +1,7 @@
-= DGML: D-lang Generic Tensor Library
+= Densor: D-lang Generic Tensor Library
 
 == Overview
-DGML is a pure D port of the concepts found in GGML and Candle (Rust). It provides a tensor library and inference engine capable of running quantized GGUF models on CPU (and potentially GPU via Compute Shaders later).
+Densor is a pure D port of the concepts found in GGML and Candle (Rust). It provides a tensor library and inference engine capable of running quantized GGUF models on CPU (and potentially GPU via Compute Shaders later).
 
 == Goals
 1.  **Pure D**: No C bindings. Complete reimplementation of tensor operations.
@@ -21,4 +21,4 @@ DGML is a pure D port of the concepts found in GGML and Candle (Rust). It provid
 - **Backend**: CPU (SIMD) initially.
 
 == Usage
-`dub add dgml`
+`dub add densor`

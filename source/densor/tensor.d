@@ -1,4 +1,4 @@
-module dgml.tensor;
+module densor.tensor;
 
 import mir.ndslice;
 

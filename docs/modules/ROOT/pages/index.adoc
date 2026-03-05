@@ -1,3 +1,3 @@
-= DGML
+= DGTL
 
-Welcome to DGML documentation.
+Welcome to DGTL documentation.

@@ -1,4 +1,4 @@
-# Implementation Plan: DGML
+# Implementation Plan: Densor
 
 ## Phase 0: Integration Context
 
@@ -15,7 +15,7 @@
 
 ## Phase 2: GGUF Parsing
 
-- [x] Implement a GGUF reader in `source/dgml/format/gguf.d`. (Basic structure implemented)
+- [x] Implement a GGUF reader in `source/densor/format/gguf.d`. (Basic structure implemented)
 - [ ] Map GGUF tensor types (F16, Q4_0, Q8_0) to internal storage.
 - [ ] Implement dequantization kernels (Q4_0 -> F32) for inference.
 
